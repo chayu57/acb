@@ -13,11 +13,13 @@ const Containers = () => {
     const [i1, setI1] = useState();
     const [i2, setI2] = useState();
     const [i3, setI3] = useState();
+    const [w1, setW1] = useState();
+    const [w2, setW2] = useState();
    
       
     useEffect(() => {
       setInterval(() => {
-          fetch("https://dc-board.onrender.com/api/sensordata")
+          fetch("https://acbbbbp.onrender.com/api/sensordata")
               .then(async result => {
                   const data = await result.json();
                   setV1(data.v1);
@@ -26,6 +28,8 @@ const Containers = () => {
                   setI1(data.i1);
                   setI2(data.i2);
                   setI3(data.i3);
+                  setW1(data.w1);
+                  setW2(data.w2);
                   
               })
               .catch(error => {
@@ -66,6 +70,14 @@ const Containers = () => {
                         <div className="col-6">
                             <Input label="" value={v3} className="xy" disabled />
                         </div></div>
+
+                        <div className="arrange">
+                        <div className="col-6">
+                            <p className="col__text">Power(w1)</p>
+                        </div>
+                        <div className="col-6">
+                            <Input label="" value={w1} className="xy" disabled />
+                        </div></div>
                         </div>
 
 
@@ -91,6 +103,15 @@ const Containers = () => {
                         </div>
                         <div className="col-6">
                             <Input label="" value={i3} className="xy" disabled />
+                        </div>
+                        </div>
+
+                        <div className="arrange">
+                        <div className="col-6">
+                            <p className="col__text">Power(w2)</p>
+                        </div>
+                        <div className="col-6">
+                            <Input label="" value={w2} className="xy" disabled />
                         </div>
                         </div>
                         </div>
