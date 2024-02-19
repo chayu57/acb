@@ -63,15 +63,9 @@ const Containers = () => {
                         <div className="col-6">
                             <Input label="" value={v2} className="xy" disabled />
                         </div></div>
-                        <div className="arrange">
-                        <div className="col-6">
-                            <p className="col__text">Voltage(v3)</p>
-                        </div>
-                        <div className="col-6">
-                            <Input label="" value={v3} className="xy" disabled />
-                        </div></div>
+                       
 
-                        <div className="arrange">
+                        <div className="arranged">
                         <div className="col-6">
                             <p className="col__text">Power(w1)</p>
                         </div>
@@ -95,25 +89,10 @@ const Containers = () => {
                             <p className="col__text">Current(i2)</p>
                         </div>
                         <div className="col-6">
-                            <Input label="" value={i2} className="xy" disabled />
+                            <Input label="" value={i2} id="yourInputField" className="xy" disabled />
                         </div></div>
-                        <div className="arrange">
-                        <div className="col-6">
-                            <p className="col__text">Current(i3)</p>
-                        </div>
-                        <div className="col-6">
-                            <Input label="" value={i3} className="xy" disabled />
-                        </div>
-                        </div>
+                        
 
-                        <div className="arrange">
-                        <div className="col-6">
-                            <p className="col__text">Power(w2)</p>
-                        </div>
-                        <div className="col-6">
-                            <Input label="" value={w2} className="xy" disabled />
-                        </div>
-                        </div>
                         </div>
                     </div>
                 </Card>

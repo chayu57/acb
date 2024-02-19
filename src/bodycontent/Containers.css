@@ -24,5 +24,18 @@
     left :50%;
     
   }
+  .arranged{
+    width: 35%;
+    margin-top: 6rem;
+    margin-left: 17rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+
+
+  }
+  #yourInputField{
+    color: black;
+  }
   
   
